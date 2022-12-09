@@ -1,12 +1,14 @@
 import Layout from "../components/layout/Layout";
 import Head from "../components/layout/Head";
+import Image from "next/image";
 export default function Game({ game }) {
-  console.log(game);
+  console.log(game.image);
   return (
     <Layout>
       <Head title={game.name} />
       <h1>{game.name}</h1>
       <img src={game.image} />
+      <Image src="/../public/ok.jpg" width="500" height="300" alt="ook" />
     </Layout>
   );
 }
